@@ -1,0 +1,127 @@
+body
+	font-family: 'Helvetica', sans-serif,'Helvetica'
+
+// Variables
+
+$backgroundcolour: #DEDEDE
+$backgroundcolourmain: #38A18C
+
+
+
+// Mixins 
+
+@mixin flexing()
+	display: flex
+	flex-wrap: wrap
+	justify-content: center
+
+// Header
+
+header
+	text-align: center
+	background-color: $backgroundcolour
+	height: 100px
+	font-size: 20px
+
+	a
+		text-decoration: none
+
+	h2
+		color: #E78448
+
+// Nav Bar
+
+navbar
+	background-color: $backgroundcolour
+	margin: 0px 20px 1px 20px
+	color: white
+	border-radius: 25px
+	padding: 5px
+
+
+ul
+	list-style-type: none
+	margin: 0px
+	padding: 5px
+	text-decoration: none
+
+navbar li
+	display: inline
+
+navbar a
+	display: inline-block
+	padding: 10px
+	color: white
+	text-decoration: none
+
+
+navbar a:hover
+	background-color: darkgrey
+
+// Employees
+
+
+#content
+
+	@include flexing
+	text-align: center
+	background-color: $backgroundcolourmain
+	height: 400px
+		
+	figure
+		width: 250px
+		height: 250px
+		margin: 50px
+		text-align: center
+
+		img
+			width: 500px
+			max-width: 100%
+			// z-index: 1
+
+figcaption
+	color: white
+
+h3
+	text-align: center
+	color: #2E4451
+	font-size: 30px
+	float: right
+	@include flexing
+	// padding: 20px
+
+// Quotation
+
+#quotation
+	background-color: $backgroundcolourmain	
+	height: 200px
+
+	label
+		line-height: 50px 
+
+// Buttons
+
+#button1
+	background-color: $backgroundcolour
+	height: 100px
+	text-align: center
+
+	.button
+		line-height: 80px
+
+button
+	border: 1px
+	border-color: #2E4451
+	font-color: #2E4451
+
+#button2
+	background-color: $backgroundcolour
+	height: 100px
+
+button
+	border: 1px
+	border-color: #2E4451
+	font-color: #2E4451
+	
+	.button
+		line-height: 50px
