@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Code Review 3: HTML, CSS, Javascript
+	</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/script.js" type="text/javascript" charset="utf-8" async defer>	
+	</script>
+</head>
+<body>
+	    <!-- header including navigation bar and title of page --> 
+	 <header id="header" class="header">
+        <h2>Insurance Company</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="quotation.html">Quotation</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#About">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- main part of website, presenting quotation form --> 
+ <main>
+
+    <div class="container">
+<div class="row">
+<label for="name">Name</label> <input id="name" type="text">
+</div>
+<div class="row">
+<label for="age">Age</label> <input id="age" type="text">
+</div>
+
+<div class="row">
+<label for="country">Country</label> <input id="country" type="text">
+</div>
+
+<div class="row">
+<label for="horse_power">Horse Power</label> <input id="horse_power" type="text">
+</div>
+
+<div class="row">
+<button onclick="calculateInsurance()">Calculate</button>
+
+</div>
+ 	
+ </main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
