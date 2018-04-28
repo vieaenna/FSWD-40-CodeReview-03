@@ -1,14 +1,12 @@
 body
-	font-family: 'Helvetica', sans-serif,'Helvetica'
+	@import: "font"
 
 // Variables
 
-$backgroundcolour: #DEDEDE
-$backgroundcolourmain: #38A18C
+$bgcolour: #DEDEDE
+$bgcolourmain: #38A18C
 
-
-
-// Mixins 
+// Mixins
 
 @mixin flexing()
 	display: flex
@@ -19,7 +17,7 @@ $backgroundcolourmain: #38A18C
 
 header
 	text-align: center
-	background-color: $backgroundcolour
+	background-color: $bgcolour
 	height: 100px
 	font-size: 20px
 
@@ -31,13 +29,12 @@ header
 
 // Nav Bar
 
-navbar
-	background-color: $backgroundcolour
+nav
+	background-color: $bgcolour
 	margin: 0px 20px 1px 20px
 	color: white
 	border-radius: 25px
-	padding: 5px
-
+	padding: 5px 0px 0px 30px
 
 ul
 	list-style-type: none
@@ -45,27 +42,26 @@ ul
 	padding: 5px
 	text-decoration: none
 
-navbar li
+nav li
 	display: inline
 
-navbar a
+nav a
 	display: inline-block
 	padding: 10px
 	color: white
 	text-decoration: none
 
 
-navbar a:hover
+nav a:hover
 	background-color: darkgrey
 
 // Employees
 
 
 #content
-
 	@include flexing
 	text-align: center
-	background-color: $backgroundcolourmain
+	background-color: $bgcolourmain
 	height: 400px
 		
 	figure
@@ -77,7 +73,6 @@ navbar a:hover
 		img
 			width: 500px
 			max-width: 100%
-			// z-index: 1
 
 figcaption
 	color: white
@@ -86,14 +81,12 @@ h3
 	text-align: center
 	color: #2E4451
 	font-size: 30px
-	float: right
 	@include flexing
-	// padding: 20px
 
 // Quotation
 
 #quotation
-	background-color: $backgroundcolourmain	
+	background-color: $bgcolourmain	
 	height: 200px
 
 	label
@@ -102,7 +95,7 @@ h3
 // Buttons
 
 #button1
-	background-color: $backgroundcolour
+	background-color: $bgcolour
 	height: 100px
 	text-align: center
 
@@ -115,13 +108,14 @@ button
 	font-color: #2E4451
 
 #button2
-	background-color: $backgroundcolour
+	background-color: $bgcolour
 	height: 100px
 
-button
-	border: 1px
-	border-color: #2E4451
-	font-color: #2E4451
-	
 	.button
+		border: 1px
+		border-color: black
+		font-color: #2E4451
 		line-height: 50px
+
+
+//usage of extend was not considered useful for this CodeReview. 
